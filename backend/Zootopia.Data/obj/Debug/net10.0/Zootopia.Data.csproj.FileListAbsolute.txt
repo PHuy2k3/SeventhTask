@@ -1,0 +1,17 @@
+D:\CMC_Task\seventh-task\backend\Zootopia.Data\bin\Debug\net10.0\Zootopia.Data.deps.json
+D:\CMC_Task\seventh-task\backend\Zootopia.Data\bin\Debug\net10.0\Zootopia.Data.runtimeconfig.json
+D:\CMC_Task\seventh-task\backend\Zootopia.Data\bin\Debug\net10.0\Zootopia.Data.dll
+D:\CMC_Task\seventh-task\backend\Zootopia.Data\bin\Debug\net10.0\Zootopia.Data.pdb
+D:\CMC_Task\seventh-task\backend\Zootopia.Data\bin\Debug\net10.0\Zootopia.Data.Model.dll
+D:\CMC_Task\seventh-task\backend\Zootopia.Data\bin\Debug\net10.0\Zootopia.Data.Model.pdb
+D:\CMC_Task\seventh-task\backend\Zootopia.Data\obj\Debug\net10.0\Zootopia.Data.csproj.AssemblyReference.cache
+D:\CMC_Task\seventh-task\backend\Zootopia.Data\obj\Debug\net10.0\Zootopia.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\CMC_Task\seventh-task\backend\Zootopia.Data\obj\Debug\net10.0\Zootopia.Data.AssemblyInfoInputs.cache
+D:\CMC_Task\seventh-task\backend\Zootopia.Data\obj\Debug\net10.0\Zootopia.Data.AssemblyInfo.cs
+D:\CMC_Task\seventh-task\backend\Zootopia.Data\obj\Debug\net10.0\Zootopia.Data.csproj.CoreCompileInputs.cache
+D:\CMC_Task\seventh-task\backend\Zootopia.Data\obj\Debug\net10.0\Zootopia.D2BAC252.Up2Date
+D:\CMC_Task\seventh-task\backend\Zootopia.Data\obj\Debug\net10.0\Zootopia.Data.dll
+D:\CMC_Task\seventh-task\backend\Zootopia.Data\obj\Debug\net10.0\refint\Zootopia.Data.dll
+D:\CMC_Task\seventh-task\backend\Zootopia.Data\obj\Debug\net10.0\Zootopia.Data.pdb
+D:\CMC_Task\seventh-task\backend\Zootopia.Data\obj\Debug\net10.0\Zootopia.Data.genruntimeconfig.cache
+D:\CMC_Task\seventh-task\backend\Zootopia.Data\obj\Debug\net10.0\ref\Zootopia.Data.dll

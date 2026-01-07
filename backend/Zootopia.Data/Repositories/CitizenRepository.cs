@@ -1,0 +1,41 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Zootopia.Data.Model.Entities;
+
+namespace Zootopia.Data;
+
+public class CitizenRepository : ICitizenRepository
+{
+    private readonly AppDbContext _context;
+
+    public CitizenRepository(AppDbContext context)
+    {
+        _context = context;
+    }
+
+    public async Task<List<Citizen>> ListAsync(string? q)
+    {
+        var query = _context.Citizens.AsQueryable();
+
+        if (!string.IsNullOrWhiteSpace(q))
+        {
+            q = q.Trim();
+            query = query.Where(x =>
+                (x.FullName ?? "").Contains(q) ||
+                (x.NationalId ?? "").Contains(q));
+        }
+
+        return await query
+            .OrderByDescending(x => x.Id)
+            .ToListAsync();
+    }
+
+    public Task<Citizen?> GetAsync(int id)
+        => _context.Citizens.FirstOrDefaultAsync(x => x.Id == id);
+
+    public async Task<Citizen> CreateAsync(Citizen citizen)
+    {
+        _context.Citizens.Add(citizen);
+        await _context.SaveChangesAsync();
+        return citizen;
+    }
+}

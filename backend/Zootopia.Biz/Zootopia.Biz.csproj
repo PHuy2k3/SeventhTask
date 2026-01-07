@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\Zootopia.Biz.Model\Zootopia.Biz.Model.csproj" />
+    <ProjectReference Include="..\Zootopia.Data\Zootopia.Data.csproj" />
+    <ProjectReference Include="..\Zootopia.Data.Model\Zootopia.Data.Model.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>

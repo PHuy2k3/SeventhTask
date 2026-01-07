@@ -1,0 +1,11 @@
+D:\CMC_Task\seventh-task\backend\Zootopia.Biz.Model\bin\Debug\net10.0\Zootopia.Biz.Model.deps.json
+D:\CMC_Task\seventh-task\backend\Zootopia.Biz.Model\bin\Debug\net10.0\Zootopia.Biz.Model.dll
+D:\CMC_Task\seventh-task\backend\Zootopia.Biz.Model\bin\Debug\net10.0\Zootopia.Biz.Model.pdb
+D:\CMC_Task\seventh-task\backend\Zootopia.Biz.Model\obj\Debug\net10.0\Zootopia.Biz.Model.GeneratedMSBuildEditorConfig.editorconfig
+D:\CMC_Task\seventh-task\backend\Zootopia.Biz.Model\obj\Debug\net10.0\Zootopia.Biz.Model.AssemblyInfoInputs.cache
+D:\CMC_Task\seventh-task\backend\Zootopia.Biz.Model\obj\Debug\net10.0\Zootopia.Biz.Model.AssemblyInfo.cs
+D:\CMC_Task\seventh-task\backend\Zootopia.Biz.Model\obj\Debug\net10.0\Zootopia.Biz.Model.csproj.CoreCompileInputs.cache
+D:\CMC_Task\seventh-task\backend\Zootopia.Biz.Model\obj\Debug\net10.0\Zootopia.Biz.Model.dll
+D:\CMC_Task\seventh-task\backend\Zootopia.Biz.Model\obj\Debug\net10.0\refint\Zootopia.Biz.Model.dll
+D:\CMC_Task\seventh-task\backend\Zootopia.Biz.Model\obj\Debug\net10.0\Zootopia.Biz.Model.pdb
+D:\CMC_Task\seventh-task\backend\Zootopia.Biz.Model\obj\Debug\net10.0\ref\Zootopia.Biz.Model.dll
