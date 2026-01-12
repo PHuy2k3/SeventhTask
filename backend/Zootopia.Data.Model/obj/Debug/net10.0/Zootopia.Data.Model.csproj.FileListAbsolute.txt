@@ -10,3 +10,4 @@ D:\CMC_Task\seventh-task\backend\Zootopia.Data.Model\obj\Debug\net10.0\Zootopia.
 D:\CMC_Task\seventh-task\backend\Zootopia.Data.Model\obj\Debug\net10.0\refint\Zootopia.Data.Model.dll
 D:\CMC_Task\seventh-task\backend\Zootopia.Data.Model\obj\Debug\net10.0\Zootopia.Data.Model.pdb
 D:\CMC_Task\seventh-task\backend\Zootopia.Data.Model\obj\Debug\net10.0\ref\Zootopia.Data.Model.dll
+D:\CMC_Task\seventh-task\backend\Zootopia.Data.Model\obj\Debug\net10.0\Zootopia.Data.Model.sourcelink.json

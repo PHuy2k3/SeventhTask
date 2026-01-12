@@ -13,7 +13,9 @@ public class AppDbContext : DbContext
     {
         modelBuilder.Entity<Citizen>(e =>
         {
-            e.ToTable("Citizens", "dbo");
+            // ✅ báo EF biết table có trigger để tránh OUTPUT clause gây lỗi
+            e.ToTable("Citizens", "dbo", tb => tb.HasTrigger("TR_Citizens"));
+
             e.HasKey(x => x.Id);
 
             e.Property(x => x.FullName).IsRequired().HasMaxLength(200);

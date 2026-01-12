@@ -76,6 +76,30 @@ public class CitizensController : ControllerBase
             fileName
         );
     }
+
+    [HttpGet("{id:int}")]
+    public async Task<IActionResult> GetById([FromRoute] int id)
+    {
+        var dto = await _service.GetByIdAsync(id);
+        if (dto == null) return NotFound(new { message = "Citizen not found" });
+
+        return Ok(dto);
+    }
+    [HttpPut("{id:int}")]
+    public async Task<IActionResult> Update([FromRoute] int id, [FromBody] UpdateCitizenRequest dto)
+    {
+        // validate nhẹ
+        if (string.IsNullOrWhiteSpace(dto.FullName))
+            return BadRequest(new { message = "FullName is required" });
+
+        if (string.IsNullOrWhiteSpace(dto.NationalId))
+            return BadRequest(new { message = "NationalId is required" });
+
+        var ok = await _service.UpdateAsync(id, dto);
+        if (!ok) return NotFound(new { message = "Citizen not found" });
+
+        return Ok(new { message = "Updated" });
+    }
 }
 
 

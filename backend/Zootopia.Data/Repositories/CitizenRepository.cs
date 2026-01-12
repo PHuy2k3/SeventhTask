@@ -29,13 +29,20 @@ public class CitizenRepository : ICitizenRepository
             .ToListAsync();
     }
 
-    public Task<Citizen?> GetAsync(int id)
-        => _context.Citizens.FirstOrDefaultAsync(x => x.Id == id);
-
     public async Task<Citizen> CreateAsync(Citizen citizen)
     {
         _context.Citizens.Add(citizen);
         await _context.SaveChangesAsync();
         return citizen;
     }
+    public async Task<Citizen?> GetAsync(int id)
+    {
+        return await _context.Citizens.FirstOrDefaultAsync(x => x.Id == id);
+    }
+    public async Task UpdateAsync(Citizen entity)
+    {
+        _context.Citizens.Update(entity);
+        await _context.SaveChangesAsync();
+    }
+
 }

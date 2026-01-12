@@ -8,4 +8,6 @@ public interface ICitizenService
 {
     Task<List<Citizen>> ListAsync(string? q);
     Task<Citizen> CreateAsync(CreateCitizenRequest dto);
+    Task<CitizenDto?> GetByIdAsync(int id);
+    Task<bool> UpdateAsync(int id, UpdateCitizenRequest req);
 }

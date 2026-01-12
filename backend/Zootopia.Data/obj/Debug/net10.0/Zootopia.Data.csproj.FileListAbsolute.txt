@@ -15,3 +15,4 @@ D:\CMC_Task\seventh-task\backend\Zootopia.Data\obj\Debug\net10.0\refint\Zootopia
 D:\CMC_Task\seventh-task\backend\Zootopia.Data\obj\Debug\net10.0\Zootopia.Data.pdb
 D:\CMC_Task\seventh-task\backend\Zootopia.Data\obj\Debug\net10.0\Zootopia.Data.genruntimeconfig.cache
 D:\CMC_Task\seventh-task\backend\Zootopia.Data\obj\Debug\net10.0\ref\Zootopia.Data.dll
+D:\CMC_Task\seventh-task\backend\Zootopia.Data\obj\Debug\net10.0\Zootopia.Data.sourcelink.json

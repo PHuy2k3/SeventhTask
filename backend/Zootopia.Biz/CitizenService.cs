@@ -38,4 +38,33 @@ public class CitizenService : ICitizenService
 
         return await _repo.CreateAsync(entity);
     }
+    public async Task<CitizenDto?> GetByIdAsync(int id)
+    {
+        var entity = await _repo.GetAsync(id);
+        if (entity == null) return null;
+
+        return new CitizenDto
+        {
+            Id = entity.Id,
+            FullName = entity.FullName,
+            NationalId = entity.NationalId,
+            DateOfBirth = entity.DateOfBirth,
+            AddressText = entity.AddressText
+            // thêm field khác nếu bạn có
+        };
+    }
+    public async Task<bool> UpdateAsync(int id, UpdateCitizenRequest req)
+    {
+        var entity = await _repo.GetAsync(id);
+        if (entity == null) return false;
+
+        // update fields
+        entity.FullName = req.FullName?.Trim();
+        entity.NationalId = req.NationalId?.Trim();
+        entity.DateOfBirth = req.DateOfBirth;
+        entity.AddressText = req.AddressText?.Trim();
+
+        await _repo.UpdateAsync(entity);
+        return true;
+    }
 }

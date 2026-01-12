@@ -7,6 +7,30 @@
       "RelativeMoniker": "D:0:0:{7827892B-1A64-4B1B-962A-59EF01588B81}|Zootopia.Api\\Zootopia.Api.csproj|solutionrelative:zootopia.api\\controllers\\citizenscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{2104E8A9-6076-420F-B6B1-9C3FAA9372BC}|Zootopia.Data\\Zootopia.Data.csproj|d:\\cmc_task\\seventh-task\\backend\\zootopia.data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2104E8A9-6076-420F-B6B1-9C3FAA9372BC}|Zootopia.Data\\Zootopia.Data.csproj|solutionrelative:zootopia.data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2104E8A9-6076-420F-B6B1-9C3FAA9372BC}|Zootopia.Data\\Zootopia.Data.csproj|d:\\cmc_task\\seventh-task\\backend\\zootopia.data\\repositories\\citizenrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2104E8A9-6076-420F-B6B1-9C3FAA9372BC}|Zootopia.Data\\Zootopia.Data.csproj|solutionrelative:zootopia.data\\repositories\\citizenrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2104E8A9-6076-420F-B6B1-9C3FAA9372BC}|Zootopia.Data\\Zootopia.Data.csproj|d:\\cmc_task\\seventh-task\\backend\\zootopia.data\\interfaces\\icitizenrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2104E8A9-6076-420F-B6B1-9C3FAA9372BC}|Zootopia.Data\\Zootopia.Data.csproj|solutionrelative:zootopia.data\\interfaces\\icitizenrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0849CCF8-A2E9-4857-925D-31FB7915D0B4}|Zootopia.Biz\\Zootopia.Biz.csproj|d:\\cmc_task\\seventh-task\\backend\\zootopia.biz\\citizenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0849CCF8-A2E9-4857-925D-31FB7915D0B4}|Zootopia.Biz\\Zootopia.Biz.csproj|solutionrelative:zootopia.biz\\citizenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0849CCF8-A2E9-4857-925D-31FB7915D0B4}|Zootopia.Biz\\Zootopia.Biz.csproj|d:\\cmc_task\\seventh-task\\backend\\zootopia.biz\\icitizenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0849CCF8-A2E9-4857-925D-31FB7915D0B4}|Zootopia.Biz\\Zootopia.Biz.csproj|solutionrelative:zootopia.biz\\icitizenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8261ABB8-BD4A-42F0-BE01-694BE0C7FBA0}|Zootopia.Biz.Model\\Zootopia.Biz.Model.csproj|d:\\cmc_task\\seventh-task\\backend\\zootopia.biz.model\\citizens\\updatecitizenrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8261ABB8-BD4A-42F0-BE01-694BE0C7FBA0}|Zootopia.Biz.Model\\Zootopia.Biz.Model.csproj|solutionrelative:zootopia.biz.model\\citizens\\updatecitizenrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7827892B-1A64-4B1B-962A-59EF01588B81}|Zootopia.Api\\Zootopia.Api.csproj|d:\\cmc_task\\seventh-task\\backend\\zootopia.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7827892B-1A64-4B1B-962A-59EF01588B81}|Zootopia.Api\\Zootopia.Api.csproj|solutionrelative:zootopia.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -37,26 +61,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{46C71CC7-1C24-4F96-9572-4B99544EB52D}|Zootopia.Data.Model\\Zootopia.Data.Model.csproj|d:\\cmc_task\\seventh-task\\backend\\zootopia.data.model\\requests\\createcitizenrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{46C71CC7-1C24-4F96-9572-4B99544EB52D}|Zootopia.Data.Model\\Zootopia.Data.Model.csproj|solutionrelative:zootopia.data.model\\requests\\createcitizenrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0849CCF8-A2E9-4857-925D-31FB7915D0B4}|Zootopia.Biz\\Zootopia.Biz.csproj|d:\\cmc_task\\seventh-task\\backend\\zootopia.biz\\citizenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0849CCF8-A2E9-4857-925D-31FB7915D0B4}|Zootopia.Biz\\Zootopia.Biz.csproj|solutionrelative:zootopia.biz\\citizenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0849CCF8-A2E9-4857-925D-31FB7915D0B4}|Zootopia.Biz\\Zootopia.Biz.csproj|d:\\cmc_task\\seventh-task\\backend\\zootopia.biz\\icitizenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0849CCF8-A2E9-4857-925D-31FB7915D0B4}|Zootopia.Biz\\Zootopia.Biz.csproj|solutionrelative:zootopia.biz\\icitizenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2104E8A9-6076-420F-B6B1-9C3FAA9372BC}|Zootopia.Data\\Zootopia.Data.csproj|d:\\cmc_task\\seventh-task\\backend\\zootopia.data\\repositories\\citizenrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2104E8A9-6076-420F-B6B1-9C3FAA9372BC}|Zootopia.Data\\Zootopia.Data.csproj|solutionrelative:zootopia.data\\repositories\\citizenrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2104E8A9-6076-420F-B6B1-9C3FAA9372BC}|Zootopia.Data\\Zootopia.Data.csproj|d:\\cmc_task\\seventh-task\\backend\\zootopia.data\\interfaces\\icitizenrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2104E8A9-6076-420F-B6B1-9C3FAA9372BC}|Zootopia.Data\\Zootopia.Data.csproj|solutionrelative:zootopia.data\\interfaces\\icitizenrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2104E8A9-6076-420F-B6B1-9C3FAA9372BC}|Zootopia.Data\\Zootopia.Data.csproj|d:\\cmc_task\\seventh-task\\backend\\zootopia.data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2104E8A9-6076-420F-B6B1-9C3FAA9372BC}|Zootopia.Data\\Zootopia.Data.csproj|solutionrelative:zootopia.data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{46C71CC7-1C24-4F96-9572-4B99544EB52D}|Zootopia.Data.Model\\Zootopia.Data.Model.csproj|d:\\cmc_task\\seventh-task\\backend\\zootopia.data.model\\entities\\citizen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -98,20 +102,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "JwtHelper.cs",
-              "DocumentMoniker": "D:\\CMC_Task\\seventh-task\\backend\\Zootopia.Api\\Helpers\\JwtHelper.cs",
-              "RelativeDocumentMoniker": "Zootopia.Api\\Helpers\\JwtHelper.cs",
-              "ToolTip": "D:\\CMC_Task\\seventh-task\\backend\\Zootopia.Api\\Helpers\\JwtHelper.cs",
-              "RelativeToolTip": "Zootopia.Api\\Helpers\\JwtHelper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABPAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "UpdateCitizenRequest.cs",
+              "DocumentMoniker": "D:\\CMC_Task\\seventh-task\\backend\\Zootopia.Biz.Model\\Citizens\\UpdateCitizenRequest.cs",
+              "RelativeDocumentMoniker": "Zootopia.Biz.Model\\Citizens\\UpdateCitizenRequest.cs",
+              "ToolTip": "D:\\CMC_Task\\seventh-task\\backend\\Zootopia.Biz.Model\\Citizens\\UpdateCitizenRequest.cs",
+              "RelativeToolTip": "Zootopia.Biz.Model\\Citizens\\UpdateCitizenRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-07T08:25:55.575Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-09T09:43:18.752Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 11,
               "Title": "LoginRequest.cs",
               "DocumentMoniker": "D:\\CMC_Task\\seventh-task\\backend\\Zootopia.Api\\Models\\LoginRequest.cs",
               "RelativeDocumentMoniker": "Zootopia.Api\\Models\\LoginRequest.cs",
@@ -119,12 +122,11 @@
               "RelativeToolTip": "Zootopia.Api\\Models\\LoginRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-07T08:25:09.137Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-07T08:25:09.137Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "AuthController.cs",
               "DocumentMoniker": "D:\\CMC_Task\\seventh-task\\backend\\Zootopia.Api\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "Zootopia.Api\\Controllers\\AuthController.cs",
@@ -132,8 +134,7 @@
               "RelativeToolTip": "Zootopia.Api\\Controllers\\AuthController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-07T08:19:50.03Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-07T08:19:50.03Z"
             },
             {
               "$type": "Document",
@@ -143,62 +144,62 @@
               "RelativeDocumentMoniker": "Zootopia.Api\\Controllers\\CitizensController.cs",
               "ToolTip": "D:\\CMC_Task\\seventh-task\\backend\\Zootopia.Api\\Controllers\\CitizensController.cs",
               "RelativeToolTip": "Zootopia.Api\\Controllers\\CitizensController.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAcwB0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGEAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-06T03:14:39.892Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 3,
               "Title": "ICitizenRepository.cs",
               "DocumentMoniker": "D:\\CMC_Task\\seventh-task\\backend\\Zootopia.Data\\Interfaces\\ICitizenRepository.cs",
               "RelativeDocumentMoniker": "Zootopia.Data\\Interfaces\\ICitizenRepository.cs",
               "ToolTip": "D:\\CMC_Task\\seventh-task\\backend\\Zootopia.Data\\Interfaces\\ICitizenRepository.cs",
               "RelativeToolTip": "Zootopia.Data\\Interfaces\\ICitizenRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-06T02:55:02.853Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 2,
               "Title": "CitizenRepository.cs",
               "DocumentMoniker": "D:\\CMC_Task\\seventh-task\\backend\\Zootopia.Data\\Repositories\\CitizenRepository.cs",
               "RelativeDocumentMoniker": "Zootopia.Data\\Repositories\\CitizenRepository.cs",
               "ToolTip": "D:\\CMC_Task\\seventh-task\\backend\\Zootopia.Data\\Repositories\\CitizenRepository.cs",
               "RelativeToolTip": "Zootopia.Data\\Repositories\\CitizenRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAqwCsAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-06T02:53:38.131Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 5,
               "Title": "ICitizenService.cs",
               "DocumentMoniker": "D:\\CMC_Task\\seventh-task\\backend\\Zootopia.Biz\\ICitizenService.cs",
               "RelativeDocumentMoniker": "Zootopia.Biz\\ICitizenService.cs",
               "ToolTip": "D:\\CMC_Task\\seventh-task\\backend\\Zootopia.Biz\\ICitizenService.cs",
               "RelativeToolTip": "Zootopia.Biz\\ICitizenService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-06T03:11:27.464Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 4,
               "Title": "CitizenService.cs",
               "DocumentMoniker": "D:\\CMC_Task\\seventh-task\\backend\\Zootopia.Biz\\CitizenService.cs",
               "RelativeDocumentMoniker": "Zootopia.Biz\\CitizenService.cs",
               "ToolTip": "D:\\CMC_Task\\seventh-task\\backend\\Zootopia.Biz\\CitizenService.cs",
               "RelativeToolTip": "Zootopia.Biz\\CitizenService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABQAAAAAAAAAAAAwwDQAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-06T03:11:01.802Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\CMC_Task\\seventh-task\\backend\\Zootopia.Api\\Program.cs",
               "RelativeDocumentMoniker": "Zootopia.Api\\Program.cs",
@@ -206,12 +207,36 @@
               "RelativeToolTip": "Zootopia.Api\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAE8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-06T02:53:55.75Z",
+              "WhenOpened": "2026-01-06T02:53:55.75Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\CMC_Task\\seventh-task\\backend\\Zootopia.Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Zootopia.Data\\AppDbContext.cs",
+              "ToolTip": "D:\\CMC_Task\\seventh-task\\backend\\Zootopia.Data\\AppDbContext.cs",
+              "RelativeToolTip": "Zootopia.Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T02:52:53.262Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 10,
+              "Title": "JwtHelper.cs",
+              "DocumentMoniker": "D:\\CMC_Task\\seventh-task\\backend\\Zootopia.Api\\Helpers\\JwtHelper.cs",
+              "RelativeDocumentMoniker": "Zootopia.Api\\Helpers\\JwtHelper.cs",
+              "ToolTip": "D:\\CMC_Task\\seventh-task\\backend\\Zootopia.Api\\Helpers\\JwtHelper.cs",
+              "RelativeToolTip": "Zootopia.Api\\Helpers\\JwtHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-07T08:25:55.575Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\CMC_Task\\seventh-task\\backend\\Zootopia.Api\\appsettings.json",
               "RelativeDocumentMoniker": "Zootopia.Api\\appsettings.json",
@@ -219,12 +244,11 @@
               "RelativeToolTip": "Zootopia.Api\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-01-06T03:13:42.027Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-06T03:13:42.027Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 14,
               "Title": "CreateCitizenRequest.cs",
               "DocumentMoniker": "D:\\CMC_Task\\seventh-task\\backend\\Zootopia.Data.Model\\Requests\\CreateCitizenRequest.cs",
               "RelativeDocumentMoniker": "Zootopia.Data.Model\\Requests\\CreateCitizenRequest.cs",
@@ -236,7 +260,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 13,
               "Title": "Zootopia.Api.csproj",
               "DocumentMoniker": "D:\\CMC_Task\\seventh-task\\backend\\Zootopia.Api\\Zootopia.Api.csproj",
               "RelativeDocumentMoniker": "Zootopia.Api\\Zootopia.Api.csproj",
@@ -248,7 +272,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 12,
               "Title": "AiController.cs",
               "DocumentMoniker": "D:\\CMC_Task\\seventh-task\\backend\\Zootopia.Api\\Controllers\\AiController.cs",
               "RelativeDocumentMoniker": "Zootopia.Api\\Controllers\\AiController.cs",
@@ -256,24 +280,11 @@
               "RelativeToolTip": "Zootopia.Api\\Controllers\\AiController.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAQwBUAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-06T03:15:08.309Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-06T03:15:08.309Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "D:\\CMC_Task\\seventh-task\\backend\\Zootopia.Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "Zootopia.Data\\AppDbContext.cs",
-              "ToolTip": "D:\\CMC_Task\\seventh-task\\backend\\Zootopia.Data\\AppDbContext.cs",
-              "RelativeToolTip": "Zootopia.Data\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-06T02:52:53.262Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "Citizen.cs",
               "DocumentMoniker": "D:\\CMC_Task\\seventh-task\\backend\\Zootopia.Data.Model\\Entities\\Citizen.cs",
               "RelativeDocumentMoniker": "Zootopia.Data.Model\\Entities\\Citizen.cs",
@@ -285,7 +296,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "AiExtractRequest.cs",
               "DocumentMoniker": "D:\\CMC_Task\\seventh-task\\backend\\Zootopia.Api\\Models\\AiExtractRequest.cs",
               "RelativeDocumentMoniker": "Zootopia.Api\\Models\\AiExtractRequest.cs",
@@ -297,7 +308,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "OcrResultDto.cs",
               "DocumentMoniker": "D:\\CMC_Task\\seventh-task\\backend\\Zootopia.Biz.Model\\Ai\\OcrResultDto.cs",
               "RelativeDocumentMoniker": "Zootopia.Biz.Model\\Ai\\OcrResultDto.cs",
@@ -309,7 +320,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "CitizenDto.cs",
               "DocumentMoniker": "D:\\CMC_Task\\seventh-task\\backend\\Zootopia.Biz.Model\\Citizens\\CitizenDto.cs",
               "RelativeDocumentMoniker": "Zootopia.Biz.Model\\Citizens\\CitizenDto.cs",
@@ -321,7 +332,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "Zootopia.Data.Model.csproj",
               "DocumentMoniker": "D:\\CMC_Task\\seventh-task\\backend\\Zootopia.Data.Model\\Zootopia.Data.Model.csproj",
               "RelativeDocumentMoniker": "Zootopia.Data.Model\\Zootopia.Data.Model.csproj",
