@@ -4,10 +4,10 @@ using Zootopia.Biz.Model.Citizens;
 using Zootopia.Biz.Model.Requests;
 using Microsoft.AspNetCore.Authorization;
 using ClosedXML.Excel;
-using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
+using Zootopia.Api.Models;
 namespace Zootopia.Api.Controllers;
 
-[Authorize(Roles = "Admin")]
 [ApiController]
 [Route("api/citizens")]
 public class CitizensController : ControllerBase
@@ -19,15 +19,47 @@ public class CitizensController : ControllerBase
         _service = service;
     }
 
+    [Authorize(Roles = "Admin")]
     [HttpGet]
     public async Task<IActionResult> List([FromQuery] string? q)
         => Ok(await _service.ListAsync(q));
 
+    [Authorize(Roles = "Admin,Citizen")]
+    [HttpGet("me")]
+    public async Task<IActionResult> GetMe()
+    {
+        var nationalId = User.FindFirstValue(ClaimTypes.Name);
+        if (string.IsNullOrWhiteSpace(nationalId))
+            return Unauthorized(new { message = "Missing identity" });
+
+        var dto = await _service.GetByNationalIdAsync(nationalId);
+        if (dto == null) return NotFound(new { message = "Citizen not found" });
+
+        return Ok(dto);
+    }
+    [Authorize(Roles = "Citizen")]
+    [HttpPost("me/password")]
+    public async Task<IActionResult> ChangePassword([FromBody] ChangePasswordRequest req)
+    {
+        var nationalId = User.FindFirstValue(ClaimTypes.Name);
+        if (string.IsNullOrWhiteSpace(nationalId))
+            return Unauthorized(new { message = "Missing identity" });
+
+        if (string.IsNullOrWhiteSpace(req.CurrentPassword) || string.IsNullOrWhiteSpace(req.NewPassword))
+            return BadRequest(new { message = "Password is required" });
+
+        var ok = await _service.ChangePasswordAsync(nationalId, req.CurrentPassword, req.NewPassword);
+        if (!ok) return BadRequest(new { message = "Current password is incorrect" });
+
+        return Ok(new { message = "Password updated" });
+    }
+    [Authorize(Roles = "Admin")]
     [HttpPost]
     public async Task<IActionResult> Create([FromBody] CreateCitizenRequest dto)
         => Ok(await _service.CreateAsync(dto));
 
 
+    [Authorize(Roles = "Admin")]
     [HttpGet("export")]
     public async Task<IActionResult> Export([FromQuery] string? q = null)
     {
@@ -77,6 +109,7 @@ public class CitizensController : ControllerBase
         );
     }
 
+    [Authorize(Roles = "Admin")]
     [HttpGet("{id:int}")]
     public async Task<IActionResult> GetById([FromRoute] int id)
     {
@@ -85,6 +118,7 @@ public class CitizensController : ControllerBase
 
         return Ok(dto);
     }
+    [Authorize(Roles = "Admin")]
     [HttpPut("{id:int}")]
     public async Task<IActionResult> Update([FromRoute] int id, [FromBody] UpdateCitizenRequest dto)
     {
@@ -101,5 +135,3 @@ public class CitizensController : ControllerBase
         return Ok(new { message = "Updated" });
     }
 }
-
-

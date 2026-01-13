@@ -7,6 +7,8 @@ public class Citizen
     public string NationalId { get; set; } = "";
     public DateTime? DateOfBirth { get; set; }
     public string? AddressText { get; set; }
+    public string? PasswordHash { get; set; }
+    public bool IsActive { get; set; } = true;
     public DateTime CreatedAt { get; set; }
     public DateTime UpdatedAt { get; set; }
 }

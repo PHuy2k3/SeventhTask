@@ -39,6 +39,11 @@ public class CitizenRepository : ICitizenRepository
     {
         return await _context.Citizens.FirstOrDefaultAsync(x => x.Id == id);
     }
+    public async Task<Citizen?> GetByNationalIdAsync(string nationalId)
+    {
+        return await _context.Citizens
+            .FirstOrDefaultAsync(x => x.NationalId == nationalId);
+    }
     public async Task UpdateAsync(Citizen entity)
     {
         _context.Citizens.Update(entity);

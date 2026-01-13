@@ -5,7 +5,7 @@ using Zootopia.Data;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
-
+using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers()
@@ -68,7 +68,24 @@ builder.Services.AddAuthorization();
 var app = builder.Build();
 
 app.UseCors("dev");
-
+using (var scope = app.Services.CreateScope())
+{
+    var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+    db.Database.ExecuteSqlRaw("""
+        IF COL_LENGTH('dbo.Citizens', 'PasswordHash') IS NULL
+        BEGIN
+            ALTER TABLE [dbo].[Citizens]
+            ADD [PasswordHash] NVARCHAR(200) NULL;
+        END
+        """);
+    db.Database.ExecuteSqlRaw("""
+        IF COL_LENGTH('dbo.Citizens', 'IsActive') IS NULL
+        BEGIN
+            ALTER TABLE [dbo].[Citizens]
+            ADD [IsActive] BIT NOT NULL CONSTRAINT DF_Citizens_IsActive DEFAULT(1);
+        END
+        """);
+}
 if (app.Environment.IsDevelopment())
 {
     app.UseDeveloperExceptionPage();

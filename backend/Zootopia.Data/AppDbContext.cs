@@ -21,7 +21,8 @@ public class AppDbContext : DbContext
             e.Property(x => x.FullName).IsRequired().HasMaxLength(200);
             e.Property(x => x.NationalId).IsRequired().HasMaxLength(20);
             e.Property(x => x.AddressText).HasMaxLength(500);
-
+            e.Property(x => x.PasswordHash).HasMaxLength(200);
+            e.Property(x => x.IsActive).HasDefaultValue(true);
             e.Property(x => x.DateOfBirth).HasColumnType("date");
             e.Property(x => x.CreatedAt).HasColumnType("datetime2(0)");
             e.Property(x => x.UpdatedAt).HasColumnType("datetime2(0)");

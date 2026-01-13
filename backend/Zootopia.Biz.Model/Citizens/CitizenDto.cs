@@ -7,4 +7,5 @@ public class CitizenDto
     public string NationalId { get; set; } = "";
     public DateTime? DateOfBirth { get; set; }
     public string? AddressText { get; set; }
+    public bool IsActive { get; set; }
 }
