@@ -30,7 +30,20 @@ public class AiController : ControllerBase
         sc.Headers.ContentType = new MediaTypeHeaderValue(file.ContentType);
         form.Add(sc, "file", file.FileName);
 
-        var resp = await client.PostAsync("/extract", form);
+        HttpResponseMessage resp;
+        try
+        {
+            resp = await client.PostAsync("/extract", form);
+        }
+        catch (HttpRequestException ex)
+        {
+            return StatusCode(StatusCodes.Status503ServiceUnavailable, new
+            {
+                error = "AI service unavailable",
+                detail = ex.Message
+            });
+        }
+
         var json = await resp.Content.ReadAsStringAsync();
 
         if (!resp.IsSuccessStatusCode)

@@ -53,7 +53,7 @@ public class CitizenService : ICitizenService
             FullName = entity.FullName,
             NationalId = entity.NationalId,
             DateOfBirth = entity.DateOfBirth,
-            AddressText = entity.AddressText
+            AddressText = entity.AddressText,
             IsActive = entity.IsActive
             // thêm field khác nếu bạn có
         };
@@ -70,7 +70,7 @@ public class CitizenService : ICitizenService
             FullName = entity.FullName,
             NationalId = entity.NationalId,
             DateOfBirth = entity.DateOfBirth,
-            AddressText = entity.AddressText
+            AddressText = entity.AddressText,
             IsActive = entity.IsActive
         };
     }
@@ -102,7 +102,7 @@ public class CitizenService : ICitizenService
             FullName = entity.FullName,
             NationalId = entity.NationalId,
             DateOfBirth = entity.DateOfBirth,
-            AddressText = entity.AddressText
+            AddressText = entity.AddressText,
              IsActive = entity.IsActive
         };
     }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Zootopia.Data")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+db9e36084df7b0b3dc025650c732dbbffb7654a7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f33cc7072a3c58c981d115203ce6406a586b83f2")]
 [assembly: System.Reflection.AssemblyProductAttribute("Zootopia.Data")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Zootopia.Data")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
