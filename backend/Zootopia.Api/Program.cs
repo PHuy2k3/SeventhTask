@@ -1,11 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Zootopia.Biz;
 using Zootopia.Data;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Microsoft.EntityFrameworkCore;
+using Zootopia.Biz.Services;
+using Zootopia.Biz.Interfaces;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers()
@@ -30,7 +31,8 @@ builder.Services.AddDbContext<AppDbContext>(opt =>
 
 builder.Services.AddScoped<ICitizenRepository, CitizenRepository>();
 builder.Services.AddScoped<ICitizenService, CitizenService>();
-
+builder.Services.AddScoped<ISocialInsuranceRegistrationRepository, SocialInsuranceRegistrationRepository>();
+builder.Services.AddScoped<ISocialInsuranceRegistrationService, SocialInsuranceRegistrationService>();
 builder.Services.AddCors(opt =>
 {
     opt.AddPolicy("dev", p => p
@@ -79,10 +81,53 @@ using (var scope = app.Services.CreateScope())
         END
         """);
     db.Database.ExecuteSqlRaw("""
+        IF COL_LENGTH('dbo.Citizens', 'SocialInsuranceNumber') IS NULL
+        BEGIN
+            ALTER TABLE [dbo].[Citizens]
+            ADD [SocialInsuranceNumber] NVARCHAR(50) NULL;
+        END
+        """);
+    db.Database.ExecuteSqlRaw("""
+        IF COL_LENGTH('dbo.Citizens', 'SocialInsuranceProvider') IS NULL
+        BEGIN
+            ALTER TABLE [dbo].[Citizens]
+            ADD [SocialInsuranceProvider] NVARCHAR(120) NULL;
+        END
+        """);
+    db.Database.ExecuteSqlRaw("""
         IF COL_LENGTH('dbo.Citizens', 'IsActive') IS NULL
         BEGIN
             ALTER TABLE [dbo].[Citizens]
             ADD [IsActive] BIT NOT NULL CONSTRAINT DF_Citizens_IsActive DEFAULT(1);
+        END
+        """);
+    db.Database.ExecuteSqlRaw("""
+        IF OBJECT_ID('dbo.SocialInsuranceRegistrations', 'U') IS NULL
+        BEGIN
+            CREATE TABLE [dbo].[SocialInsuranceRegistrations] (
+                [Id] INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
+                [CitizenId] INT NOT NULL,
+                [SocialInsuranceNumber] NVARCHAR(50) NOT NULL,
+                [SocialInsuranceProvider] NVARCHAR(120) NOT NULL,
+                [Status] NVARCHAR(30) NOT NULL,
+                [Note] NVARCHAR(500) NULL,
+                [CreatedAt] DATETIME2(0) NOT NULL,
+                [ReviewedAt] DATETIME2(0) NULL,
+                [ReviewedBy] NVARCHAR(100) NULL
+            );
+        END
+        """);
+    db.Database.ExecuteSqlRaw("""
+        IF NOT EXISTS (
+            SELECT 1
+            FROM sys.foreign_keys
+            WHERE name = 'FK_SocialInsuranceRegistrations_Citizens'
+        )
+        BEGIN
+            ALTER TABLE [dbo].[SocialInsuranceRegistrations]
+            ADD CONSTRAINT FK_SocialInsuranceRegistrations_Citizens
+            FOREIGN KEY ([CitizenId]) REFERENCES [dbo].[Citizens]([Id])
+            ON DELETE CASCADE;
         END
         """);
 }

@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Zootopia.Api.Helpers;
 using Zootopia.Api.Models;
-using Zootopia.Biz;
+using Zootopia.Biz.Interfaces;
 
 namespace Zootopia.Api.Controllers;
 

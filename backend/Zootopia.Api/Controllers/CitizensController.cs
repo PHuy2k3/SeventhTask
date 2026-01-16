@@ -1,11 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Zootopia.Biz;
 using Zootopia.Biz.Model.Citizens;
 using Zootopia.Biz.Model.Requests;
 using Microsoft.AspNetCore.Authorization;
 using ClosedXML.Excel;
 using System.Security.Claims;
 using Zootopia.Api.Models;
+using Zootopia.Biz.Interfaces;
 namespace Zootopia.Api.Controllers;
 
 [ApiController]
@@ -117,6 +117,22 @@ public class CitizensController : ControllerBase
         if (dto == null) return NotFound(new { message = "Citizen not found" });
 
         return Ok(dto);
+    }
+    [AllowAnonymous]
+    [HttpGet("public/{id:int}")]
+    public async Task<IActionResult> GetPublicById([FromRoute] int id)
+    {
+        var dto = await _service.GetByIdAsync(id);
+        if (dto == null) return NotFound(new { message = "Citizen not found" });
+
+        return Ok(new
+        {
+            id = dto.Id,
+            fullName = dto.FullName,
+            nationalId = dto.NationalId,
+            dateOfBirth = dto.DateOfBirth,
+            addressText = dto.AddressText
+        });
     }
     [Authorize(Roles = "Admin")]
     [HttpPut("{id:int}")]

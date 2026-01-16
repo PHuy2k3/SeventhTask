@@ -1,4 +1,5 @@
-﻿using Zootopia.Biz.Model.Citizens;
+﻿using Zootopia.Biz.Interfaces;
+using Zootopia.Biz.Model.Citizens;
 using Zootopia.Biz.Model.Requests;
 using Zootopia.Biz.Security;
 using Zootopia.Data;
